@@ -2,26 +2,71 @@
     margin: 0;
     padding: 0;
 }
-.header {
+html {
+    background-color: black;
+    color: #FFFFFF;
+}
+#header {
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 40px;
-    padding-bottom: 100px;
 }
-h1 {
+#header > h1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
     line-height: 121px;
-    color: #FFFFFF;
     padding: 100px 300px 0px;
 }
 #fetch-data {
     width: 30%;
     padding-top: 1%;
     padding-bottom: 1%;
+    font-family: 'Inter';
+    font-size: 20px;
+}
+#location {
+    display: none;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: 30px;
+    padding: 100px 200px;
+    column-gap: 50px;
+}
+#location > div {
+    flex-grow: 1;
+}
+#weather-data {
+    margin: 50px;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 30px;
+    display: none;
+    border-radius: 25px;
+}
+#weather-data > h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 121px;
+}
+#details {
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 28px;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: stretch;
+}
+#details > p {
+    flex-basis: 30%;
 }
