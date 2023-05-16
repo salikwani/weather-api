@@ -7,7 +7,8 @@ var lat = document.getElementById("lat");
 var long = document.getElementById("long");
 var details = document.getElementById("details");
 
-fetchData.addEventListener("click", () => {
+fetchData.addEventListener("click", (e) => {
+    e.preventDefault();
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
