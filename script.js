@@ -34,7 +34,7 @@ function showPosition(position) {
     weatherData(position.coords.latitude,position.coords.longitude);
 }
 
-async function weatherData(lat, long) {
+function weatherData(lat, long) {
     weather.style.display = "block";
     var url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=ef98be4e19c6c8cc43752d15216e0e64`;
     fetch(url).then((response) => {
